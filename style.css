@@ -1,0 +1,151 @@
+:root {
+    --dark: #19191B;
+    --gray: #696871;
+    --brown: #501700;
+    --brown-button: #5f1600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "DM sans", sans-serif;
+    background: rgb(255, 227, 208);
+}
+
+.header {
+    padding-block: 30px;
+}
+
+.header_container, .hero_container {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_MC {
+    display: flex;
+    align-items: center;
+}
+
+.header_h2 {
+    font-weight: 800;
+    font-size: 25px;
+    letter-spacing: -0.47px;
+}
+
+.header_list {
+    display: flex;
+    gap: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.header_list-link {
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: -0.47px;
+    transition: color 0.5s;
+}
+
+.header_list-link.active {
+    color: var(--brown);
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+.header_list-link:hover {
+    color: var(--dark);
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: -0.47px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header_button, .hero_ExploreButton, .hero_OurStoryButton {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: white;
+    padding: 19px 59px;
+    background: var(--brown-button);
+    border-radius: 45px;
+    transition: 0.4s;
+}
+
+.header_button:hover, .hero_OurStoryButton:hover, .hero_ExploreButton:hover {
+    opacity: 90%;
+}
+
+.hero {
+    padding-block: 70px;
+}
+
+.hero_container {
+    display: flex;
+    position: relative;
+    background: rgba(255, 235, 222, 0.8);
+    padding: 90px 40px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 35px;
+    border: 1px solid white;
+}
+
+.hero_image {
+    border-radius: 35px;
+    
+}
+.hero_house {
+    font-size: 10px;
+    padding-bottom: 24px;
+    color: var(--gray);
+    opacity: 90%;
+}
+
+.hero_h1 {
+    font-weight: 800;
+    font-size: 50px;
+    letter-spacing: -0.5;
+    line-height: 45px;
+    color: var(--brown);
+}
+
+.hero_desc {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.5;
+    color: var(--dark);
+}
+
+.hero_desc.f {
+    margin-top: 24px;
+}
+
+.hero_buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    padding: 0px 0px;
+}
+
+.hero_ExploreButton {
+    padding: 19px 30px;
+}
+
+.hero_content {
+    
+}
